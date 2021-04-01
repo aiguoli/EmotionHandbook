@@ -21,6 +21,7 @@ import locale from 'element-ui/lib/locale'
 * */
 axios.defaults.withCredentials = false
 axios.defaults.baseURL = 'http://thawne.pythonanywhere.com/api/v1/'
+
 axios.interceptors.request.use(
   config => {
     if (localStorage.getItem('token')) {
