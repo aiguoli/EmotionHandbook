@@ -14,13 +14,13 @@ import locale from 'element-ui/lib/locale'
 /*
 * development
 * */
-axios.defaults.withCredentials = true
-axios.defaults.baseURL = 'http://localhost:8081/api/v1/'
+// axios.defaults.withCredentials = true
+// axios.defaults.baseURL = 'http://localhost:8081/api/v1/'
 /*
 * product
 * */
-// axios.defaults.withCredentials = false
-// axios.defaults.baseURL = 'https://handbook.tomluvjerry.cn/api/v1/'
+axios.defaults.withCredentials = false
+axios.defaults.baseURL = 'http://thawne.pythonanywhere.com/api/v1/'
 axios.interceptors.request.use(
   config => {
     if (localStorage.getItem('token')) {
