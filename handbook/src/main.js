@@ -20,7 +20,7 @@ import locale from 'element-ui/lib/locale'
 * product
 * */
 axios.defaults.withCredentials = false
-axios.defaults.baseURL = 'http://thawne.pythonanywhere.com/api/v1/'
+axios.defaults.baseURL = 'https://thawne.pythonanywhere.com/api/v1/'
 
 axios.interceptors.request.use(
   config => {
